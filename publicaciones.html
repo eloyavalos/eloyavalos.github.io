@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publicaciones — Tu Nombre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F6F3EC;
+    --ink: #21261F;
+    --ink-soft: #4C534A;
+    --accent: #1F4B43;
+    --line: #DAD4C4;
+    --maxw: 680px;
+  }
+  * { box-sizing: border-box; }
+  body{ margin:0; background: var(--paper); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
+  h1, h2 { font-family: 'Source Serif 4', Georgia, serif; }
+  .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  nav{ border-bottom: 1px solid var(--line); padding: 18px 0; }
+  nav .wrap{ display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  nav a{ color: var(--ink-soft); text-decoration: none; margin-right: 18px; font-size: 15px; }
+  nav a:hover{ color: var(--accent); }
+  nav a.active{ color: var(--accent); font-weight: 600; }
+  nav .brand{ font-family: 'Source Serif 4', serif; font-weight: 600; color: var(--ink); font-size: 17px; text-decoration:none; }
+  h1{ font-size: 28px; font-weight: 600; margin: 40px 0 24px; }
+  .item{ margin-bottom: 26px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
+  .item h3{ font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+  .item .meta{ font-size: 14px; color: var(--ink-soft); margin: 0 0 8px; }
+  .item .links a{ font-size: 14px; color: var(--accent); margin-right: 12px; }
+  footer{ padding: 30px 0 60px; color: var(--ink-soft); font-size: 13px; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Tu Nombre</a>
+    <div>
+      <a href="index.html">Sobre mí</a>
+      <a href="publicaciones.html" class="active">Publicaciones</a>
+      <a href="index.html#experiencia">Experiencia</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+  <h1>Publicaciones</h1>
+
+  <div class="item">
+    <h3>Fundamentos y simulación del índice de bienestar social lexicográfico</h3>
+    <p class="meta">Revista Procesos Económicos, 2024</p>
+    <p>El presente documento expone la fundamentación y el algoritmo para la construcción de un índice de bienestar social basado en un orden lexicográfico de los indicadores intermedios.</p>
+    <p class="links">
+      <a href="#" target="_blank">PDF</a>
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>Título del trabajo o proyecto 2</h3>
+    <p class="meta">Trabajo en progreso, 2026</p>
+    <p>Breve resumen de 1-2 líneas sobre el trabajo.</p>
+    <p class="links">
+      <a href="#" target="_blank">PDF</a>
+    </p>
+  </div>
+
+  <!-- Copia el bloque .item de arriba para agregar más publicaciones -->
+
+  <footer>&copy; 2026 Tu Nombre.</footer>
+</div>
+</body>
+</html>
