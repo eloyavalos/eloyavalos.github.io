@@ -100,3 +100,11 @@ img{ max-width: 100%; height: auto; }
   .hero-row{ flex-direction: column; }
   .exp{ flex-direction: column; gap: 2px; }
 }
+
+/* ===== HOVER ROJO SANGRE ===== */
+.bio a:hover,
+.role a:hover,
+.contact-list a:hover,
+.item .links a:hover {
+  color: #8B0000;
+}
