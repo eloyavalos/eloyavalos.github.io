@@ -53,10 +53,10 @@ nav a{
 nav a:hover{ color: var(--paper); }
 nav a.active{ color: #FFFFFF; font-weight: 600; text-decoration: underline; }
 nav .brand{
-  font-family: 'Source Serif 4', serif;
+/*  font-family: 'Source Serif 4', serif; */
   font-weight: 600;
   color: #FFFFFF;
-  font-size: 17px;
+  font-size: 18px;
   text-decoration: none;
 }
 
