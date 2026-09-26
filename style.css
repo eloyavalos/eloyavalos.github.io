@@ -1,45 +1,41 @@
-/* ===== ESTILOS GENERALES ===== */
-body {
+/* ===== VARIABLES DE COLOR ===== */
+:root{
+  --paper: #EAF6FB;      /* celeste muy suave — fondo del sitio */
+  --ink: #000000;        /* texto principal */
+  --ink-soft: #33475B;   /* texto secundario (fechas, metadatos) */
+  --accent: #0B2D4D;     /* azul marino — barra, links, acentos */
+  --line: #BFE0EF;       /* líneas divisorias suaves */
+  --maxw: 680px;
+}
+
+* { box-sizing: border-box; }
+
+body{
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #eaf6fb; /* celeste muy suave */
-  color: #000; /* letras negras */
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
 }
 
-header {
-  background-color: #0b2d4d; /* azul marino */
-  color: white;
-  padding: 20px;
-}
+h1, h2 { font-family: 'Source Serif 4', Georgia, serif; }
 
-nav {
-  background-color: transparent;
-  padding: 10px;
-}
+/* h1 genérico (títulos de página, ej. "Publicaciones") */
+h1{ font-size: 28px; font-weight: 600; margin: 40px 0 24px; }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-}
+/* h1 dentro del "hero" de index.html (tu nombre) - más específico, pisa el genérico */
+header.hero h1{ font-size: 32px; font-weight: 600; margin: 0 0 4px; }
 
-nav a:hover {
-  text-decoration: underline;
-}
+h2{ font-size: 22px; font-weight: 600; margin: 0 0 20px; }
 
-main {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 20px;
-  background: transparent;
-}
+.wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
-h1, h2, h3 {
-  color: #222;
+/* ===== BARRA DE NAVEGACIÓN (navy, igual en todas las páginas) ===== */
+nav{
+  background: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding: 18px 0;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+nav .wrap{
+  display: flex;
