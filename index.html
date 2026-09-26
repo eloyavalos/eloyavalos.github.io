@@ -31,3 +31,72 @@
   h1{ font-size: 32px; font-weight: 600; margin: 0 0 4px; }
   .role{ color: var(--accent); font-weight: 500; margin: 0 0 16px; font-size: 16px; }
   .bio{ font-size: 16px; color: var(--ink-soft); }
+  .bio a { color: var(--accent); }
+  section{ padding: 36px 0; border-top: 1px solid var(--line); }
+  h2{ font-size: 22px; font-weight: 600; margin: 0 0 20px; }
+  .item{ margin-bottom: 22px; }
+  .item h3{ font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+  .item .meta{ font-size: 14px; color: var(--ink-soft); margin: 0 0 6px; }
+  .item .links a{ font-size: 14px; color: var(--accent); margin-right: 12px; }
+  .exp{ display:flex; justify-content: space-between; gap: 12px; margin-bottom: 16px; font-size: 15px; }
+  .exp .years{ color: var(--ink-soft); white-space: nowrap; }
+  .cv-btn{ display:inline-block; margin-top: 8px; padding: 8px 16px; background: var(--accent); color: var(--paper); text-decoration:none; border-radius: 4px; font-size: 14px; font-weight: 500; }
+  .contact-list a{ display:block; color: var(--ink); text-decoration:none; font-size: 15px; margin-bottom: 8px; }
+  .contact-list a:hover{ color: var(--accent); }
+  footer{ padding: 30px 0 60px; color: var(--ink-soft); font-size: 13px; }
+  @media (max-width: 480px){ .hero-row{ flex-direction: column; } .exp{ flex-direction: column; gap: 2px; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Eloy Ávalos</a>
+    <div>
+      <a href="index.html">Sobre mí</a>
+      <a href="publicaciones.html">Publicaciones</a>
+      <a href="#enseñanza">Enseñanza</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+  <header class="hero" id="sobre-mi">
+    <div class="hero-row">
+      <img src="foto.jpg" alt="Foto de Tu Nombre">
+      <div>
+        <h1>Eloy Ávalos</h1>
+        <p class="role">PhD(c) Economía, <em>Universidad Nacional de General Sarmiento</em>. MA Economía, <em>Pontificia Universidad Católica
+          del Perú</em>. BS Economía, <em>Universidad Nacional Mayor de San Marcos</em></p>
+        <p class="bio">
+          Profesor Asociado del Departamento Académico de Economía, Universidad Nacional Mayor de San Marcos.
+          <a href="mailto:eavalosa@unmsm.edu.pe">eavalosa@unmsm.edu.pe</a> o tu
+          <a href="https://scholar.google.com/citations?user=pOgKz2MAAAAJ&hl=es" target="_blank">Google Scholar</a>.
+        </p>
+      </div>
+    </div>
+  </header>
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <div class="exp">
+      <div><strong>Cargo actual</strong> — Institución</div>
+      <div class="years">2024 – presente</div>
+    </div>
+    <div class="exp">
+      <div><strong>Cargo anterior</strong> — Institución</div>
+      <div class="years">2020 – 2024</div>
+    </div>
+    <a class="cv-btn" href="cv.pdf" target="_blank">Descargar CV (PDF)</a>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-list">
+      <a href="mailto:eavalosa@unmsm.edu.pe">eavalosa@unmsm.edu.pe</a>
+      <a href="https://www.linkedin.com/in/eloy-%C3%A1valos-b8b172299/" target="_blank">LinkedIn</a>
+      <a href="https://x.com/EloyAvalosA" target="_blank">Twitter / X</a>
+      <a href="https://eloyavalos.github.io/" target="_blank">GitHub</a>
+    </div>
+  </section>
+  <footer>&copy; 2026 Eloy Ávalos. Hecho con HTML y alojado en GitHub Pages.</footer>
+</div>
+</body>
+</html>
