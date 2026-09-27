@@ -87,10 +87,10 @@ section{ padding: 14px 0; border-top: 1px solid var(--line); }
 .contact-list a:hover{ color: var(--accent); }
 
 /* ===== ITEMS (publicaciones) ===== */
-.item{ margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
-.item h3{ font-size: 16px; font-weight: 600; margin: 0 0 4px; }
-.item .meta{ font-size: 16px; color: var(--ink-soft); margin: 0 0 6px; }
-.item .links a{ font-size: 14px; color: var(--accent); margin-right: 12px; }
+.item{ margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid var(--line); }
+.item h3{ font-size: 16px; font-weight: 600; margin: 0 0 2px; }
+.item .meta{ font-size: 16px; color: var(--ink-soft); margin: 0 0 4px; }
+.item .links a{ font-size: 14px; color: var(--accent); margin-right: 5px; }
 
 footer{ padding: 30px 0 60px; color: var(--ink-soft); font-size: 13px; }
 
