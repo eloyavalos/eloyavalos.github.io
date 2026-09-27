@@ -101,6 +101,67 @@ img{ max-width: 100%; height: auto; }
   .exp{ flex-direction: column; gap: 2px; }
 }
 
+/* ===== SECCIÓN ENSEÑANZA: dos columnas ===== */
+.teach-columns{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 14px 0 20px;
+}
+
+.teach-col{
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+}
+
+.teach-col p{ margin: 0 0 16px; }
+
+.teach-col h2{
+  font-size: 18px;
+  margin: 24px 0 8px;
+  color: var(--accent);
+}
+
+.teach-col blockquote{
+  font-style: italic;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--line);
+  padding-left: 16px;
+  margin: 20px 0;
+}
+
+.cartoon{
+  margin: 20px 0;
+  text-align: center;
+}
+
+.cartoon img{
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.cartoon figcaption{ margin-top: 8px; }
+
+.cartoon-quote{
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.cartoon-credit{
+  display: block;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+@media (max-width: 480px){
+  .teach-columns{ flex-direction: column; }
+}
+
 /* ===== HOVER ROJO SANGRE ===== */
 .bio a:hover,
 .role a:hover,
