@@ -5,7 +5,7 @@
   --ink-soft: #33475B;   /* texto secundario (fechas, metadatos) */
   --accent: #0B2D4D;     /* azul marino — barra, links, acentos */
   --line: #BFE0EF;       /* líneas divisorias suaves */
-  --maxw: 680px;
+  --maxw: 900px;
 }
 
 * { box-sizing: border-box; }
