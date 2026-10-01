@@ -172,3 +172,19 @@ img{ max-width: 100%; height: auto; }
 
 .brand{ display: flex; align-items: center; gap: 8px; }
 .brand-logo{ height: 28px; width: auto; }
+
+/* ===== LINKS DENTRO DE LAS SECCIONES: color del texto, rojo al pasar el cursor ===== */
+section a,
+.teach-col a{
+  color: inherit;          /* mismo color que el texto que los rodea */
+}
+
+section a:hover,
+.teach-col a:hover{
+  color: #8B0000;          /* rojo sangre, igual que tus otros hovers */
+}
+
+/* evita que el botón del CV se ponga rojo sobre fondo azul marino */
+.cv-btn:hover{
+  color: var(--paper);
+}
